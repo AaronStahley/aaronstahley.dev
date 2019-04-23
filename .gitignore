@@ -31,3 +31,5 @@ yarn-error.log*
 *.swo
 
 *package-lock.json
+
+/Assets
