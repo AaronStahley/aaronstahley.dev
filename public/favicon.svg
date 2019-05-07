@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="71px" height="64px" viewBox="0 0 71 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="119.370302%" x2="50%" y2="-23.151642%" id="linearGradient-1">
+            <stop stop-color="#4BA8FF" offset="0%"></stop>
+            <stop stop-color="#1391FF" offset="100%"></stop>
+        </linearGradient>
+        <text id="text-2" font-family="ArialRoundedMTBold, Arial Rounded MT Bold" font-size="37" font-weight="normal" fill="#FFFFFF" fill-opacity="0.87">
+            <tspan x="1.16064453" y="46">A/S</tspan>
+        </text>
+        <filter x="-16.1%" y="-18.6%" width="132.3%" height="146.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Logo" transform="translate(4.000000, 0.000000)">
+            <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="64" height="64" rx="8"></rect>
+            <g id="A/S" fill="#FFFFFF" fill-opacity="0.87">
+                <use filter="url(#filter-3)" xlink:href="#text-2"></use>
+                <use xlink:href="#text-2"></use>
+            </g>
+        </g>
+    </g>
+</svg>
