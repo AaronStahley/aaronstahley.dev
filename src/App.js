@@ -11,17 +11,21 @@ class App extends Component {
     return (
       <body>
         <Header />
-        <main>
+        <main className="main-container">
           <section>
+            <h1 className="page-headers--left">Projects</h1>
             <Projects />
           </section>
           <section>
+            <h1 className="page-headers--right">Resume</h1>
             <Resume />
           </section>
           <section>
+            <h1 className="page-headers--right">About</h1>
             <About />
           </section>
           <section>
+            <h1 className="page-headers--right">Contact</h1>
             <Contact />
           </section>
         </main>
