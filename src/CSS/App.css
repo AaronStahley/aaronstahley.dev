@@ -1,0 +1,23 @@
+body,
+html {
+  margin: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-headers--left {
+  margin-left: 0.5em;
+  font-size: 3em;
+  color: #808182;
+}
+
+.page-headers--right {
+  margin-left: 0.5em;
+  font-size: 3em;
+  color: #808182;
+}
