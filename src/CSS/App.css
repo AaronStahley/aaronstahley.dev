@@ -11,13 +11,17 @@ html {
 }
 
 .page-headers--left {
-  margin-left: 0.5em;
+  margin: 5px 5px;
+
   font-size: 3em;
+
   color: #808182;
 }
 
 .page-headers--right {
-  margin-left: 0.5em;
+  margin: 5px 5px;
+
   font-size: 3em;
+
   color: #808182;
 }

@@ -9,7 +9,7 @@ import Resume from "./Components/Pages/Resume.jsx";
 class App extends Component {
   render() {
     return (
-      <body>
+      <div>
         <Header />
         <main className="main-container">
           <section>
@@ -21,7 +21,7 @@ class App extends Component {
             <Resume />
           </section>
           <section>
-            <h1 className="page-headers--right">About</h1>
+            <h1 className="page-headers--left">About</h1>
             <About />
           </section>
           <section>
@@ -29,7 +29,7 @@ class App extends Component {
             <Contact />
           </section>
         </main>
-      </body>
+      </div>
     );
   }
 }
