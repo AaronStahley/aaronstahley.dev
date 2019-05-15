@@ -1,46 +1,54 @@
 import React, { Component } from "react";
-import "../CSS/Header.css";
+import "../CSS/NavBar.css";
 
 class NavBar extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {};
+  }
+
+  handleScroll = () => {
+    this.setState({ scroll: window.scrollY });
+  };
+
+  componentDidMount() {
+    const element = document.querySelector("nav");
+    this.setState({ top: element.offsetTop, height: element.offsetHeight });
+    window.addEventListener("scroll", this.handleScroll);
+  }
+
+  componentDidUpdate() {
+    this.state.scroll > this.state.top
+      ? (document.body.style.paddingTop = `${this.state.height}px`)
+      : (document.body.style.paddingTop = 0);
+  }
+
   render() {
     return (
-      <nav className="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar ">
-        <a className="navbar-brand" />
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon" />
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Projects <span className="sr-only">(current)</span>
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Resume
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                About
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
+      <nav className={this.state.scroll > this.state.top ? "fixed-nav" : ""}>
+        <ul className="nav-links">
+          <li>
+            <h3>
+              <a href="/">Projects</a>
+            </h3>
+          </li>
+          <li>
+            <h3>
+              <a href="/">Resume</a>
+            </h3>
+          </li>
+          <li>
+            <h3>
+              <a href="/">About</a>
+            </h3>
+          </li>
+          <li>
+            <h3>
+              <a href="/">Contact</a>
+            </h3>
+          </li>
+        </ul>
       </nav>
     );
   }

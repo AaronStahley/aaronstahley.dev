@@ -11,8 +11,8 @@ class App extends Component {
   render() {
     return (
       <div>
-        <NavBar />
         <Header />
+        <NavBar />
         <main className="main-container">
           <section>
             <h1 className="page-headers--left">Projects</h1>
