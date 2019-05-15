@@ -5,11 +5,13 @@ import Projects from "./Components/Pages/Projects.jsx";
 import About from "./Components/Pages/About.jsx";
 import Contact from "./Components/Pages/Contact.jsx";
 import Resume from "./Components/Pages/Resume.jsx";
+import NavBar from "./Components/NavBar.jsx";
 
 class App extends Component {
   render() {
     return (
       <div>
+        <NavBar />
         <Header />
         <main className="main-container">
           <section>

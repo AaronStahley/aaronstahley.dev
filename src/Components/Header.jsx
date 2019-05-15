@@ -11,7 +11,7 @@ class Header extends Component {
         <div className="hero-inner">
           <HeroImage />
           <h1>Aaron Stahley</h1>
-          <NavBar />
+
           <SocialIcons />
         </div>
       </section>
