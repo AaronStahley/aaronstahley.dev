@@ -6,11 +6,13 @@ import About from "./Components/Pages/About.jsx";
 import Contact from "./Components/Pages/Contact.jsx";
 import Resume from "./Components/Pages/Resume.jsx";
 import NavBar from "./Components/NavBar.jsx";
+import MobileNav from "./Components/MobileNav.jsx";
 
 class App extends Component {
   render() {
     return (
       <div>
+        <MobileNav />
         <Header />
         <NavBar />
         <main className="main-container">

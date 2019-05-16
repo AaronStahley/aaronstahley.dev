@@ -13,7 +13,7 @@ class NavBar extends Component {
   };
 
   componentDidMount() {
-    const element = document.querySelector("nav");
+    const element = document.getElementById("desktop-nav");
     this.setState({ top: element.offsetTop, height: element.offsetHeight });
     window.addEventListener("scroll", this.handleScroll);
   }
@@ -26,7 +26,10 @@ class NavBar extends Component {
 
   render() {
     return (
-      <nav className={this.state.scroll > this.state.top ? "fixed-nav" : ""}>
+      <nav
+        id="desktop-nav"
+        className={this.state.scroll > this.state.top ? "fixed-nav" : ""}
+      >
         <ul className="nav-links">
           <li>
             <h3>

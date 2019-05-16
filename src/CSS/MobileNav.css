@@ -1,0 +1,17 @@
+#mobile-nav {
+  margin: 0;
+  top: 0;
+  color: #fff;
+  z-index: 9999;
+  padding: 10px 5px;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  box-sizing: border-box;
+  margin-left: 85vw;
+}
+
+@media (min-width: 769px) {
+  #mobile-nav {
+    display: none;
+  }
+}

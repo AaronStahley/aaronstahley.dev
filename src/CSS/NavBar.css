@@ -1,4 +1,4 @@
-nav {
+#desktop-nav {
   width: 100%;
   margin: 0;
   top: 0;
@@ -39,4 +39,10 @@ li:hover {
 
 h3 {
   font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+  #desktop-nav {
+    display: none;
+  }
 }
