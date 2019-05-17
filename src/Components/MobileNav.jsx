@@ -5,7 +5,7 @@ class MobileNav extends Component {
   render() {
     return (
       <nav id="mobile-nav">
-        <i className="fas fa-bars fa-2x" />
+        <i id="icon" className="fas fa-bars fa-2x" />
       </nav>
     );
   }

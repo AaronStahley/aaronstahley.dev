@@ -23,7 +23,6 @@
 
 .img-icon {
   border-radius: 50%;
-  box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 .social-icons {
@@ -31,6 +30,22 @@
   justify-content: space-evenly;
   align-items: center;
   margin: 40px 100px;
+}
+
+.linkedin {
+  transition: all 0.3s ease-in;
+}
+
+.github {
+  transition: all 0.3s ease-in;
+}
+
+.linkedin:hover {
+  color: rgba(240, 240, 240, 0.9);
+}
+
+.github:hover {
+  color: rgba(240, 240, 240, 0.9);
 }
 
 .nav-bar {
