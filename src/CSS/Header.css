@@ -1,6 +1,6 @@
 .hero-background {
   width: 100vw;
-  height: 100vh;
+  height: 94vh;
 
   display: flex;
   justify-content: center;
@@ -15,7 +15,7 @@
 }
 
 .hero-background h1 {
-  font-size: 5em;
+  font-size: 4em;
 
   margin-top: 0.2em;
   margin-bottom: 0.5em;
@@ -23,16 +23,29 @@
 
 .img-icon {
   border-radius: 50%;
-  box-shadow: 2px 2px 15px 0 rgba(0, 0, 0, 0.5);
 }
 
 .social-icons {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding-left: 10em;
-  padding-right: 10em;
-  margin-top: 2.5em;
+  margin: 40px 100px;
+}
+
+.linkedin {
+  transition: all 0.3s ease-in;
+}
+
+.github {
+  transition: all 0.3s ease-in;
+}
+
+.linkedin:hover {
+  color: rgba(240, 240, 240, 0.9);
+}
+
+.github:hover {
+  color: rgba(240, 240, 240, 0.9);
 }
 
 .nav-bar {

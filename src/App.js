@@ -5,12 +5,16 @@ import Projects from "./Components/Pages/Projects.jsx";
 import About from "./Components/Pages/About.jsx";
 import Contact from "./Components/Pages/Contact.jsx";
 import Resume from "./Components/Pages/Resume.jsx";
+import NavBar from "./Components/NavBar.jsx";
+import MobileNav from "./Components/MobileNav.jsx";
 
 class App extends Component {
   render() {
     return (
-      <body>
+      <div>
+        <MobileNav />
         <Header />
+        <NavBar />
         <main className="main-container">
           <section>
             <h1 className="page-headers--left">Projects</h1>
@@ -21,7 +25,7 @@ class App extends Component {
             <Resume />
           </section>
           <section>
-            <h1 className="page-headers--right">About</h1>
+            <h1 className="page-headers--left">About</h1>
             <About />
           </section>
           <section>
@@ -29,7 +33,7 @@ class App extends Component {
             <Contact />
           </section>
         </main>
-      </body>
+      </div>
     );
   }
 }
